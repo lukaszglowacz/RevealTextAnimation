@@ -90,17 +90,30 @@ span:first-child {
     width: 12px;
     height: 122px;
     background: linear-gradient(180deg, rgba(167,16,212,1) 27%, rgba(219,13,148,1) 54%, rgba(255,0,0,1) 100%);
-    animation: scaleUpLine 2s forwards cubic-bezier(0.85, 0, 0.15, 1);
-    animation-delay: 1s;
-    transform: skew(0deg);
+    animation: fadeLine 1s forwards cubic-bezier(0.85, 0, 0.15, 1), 2s scaleUpLine 1s forwards cubic-bezier(0.85, 0, 0.15, 1);
     margin-right: 20px;
+    overflow: hidden;
+}
+
+@keyframes fadeLine {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
 }
 
 @keyframes scaleUpLine {
-    to {
-        transform: skew(-12deg)
+    0% {
+        transform: skew(0deg);
+    }
+    100% {
+        transform: skew(-12deg);
     }
 }
+
+
 
 @keyframes scaleUpBorder {
     to {
