@@ -14,13 +14,38 @@ body {
     justify-content: center;
     align-items: center;
     background: #222;
-    color: white;
-    
+    color: white; 
 }
 
 img {
-    border: 2px solid white;
-    display: inline-block;
+    border: none;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    animation:1s ease 2s normal forwards 1 fadein;
+    -webkit-animation:1s ease 1.9s normal forwards 1 fadein;
+    opacity:0
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@-webkit-keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+.main-div {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    border:  none;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: nowrap;
 }
 
 section {
@@ -29,20 +54,16 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     max-width: 1080px;
-    border: 1px solid ;
-    
+    border: none;
+    padding-top: 200px;
 }
 
-.effect {
-    margin-left: 50%;
-    margin-right: 50%;
-    padding-top: 50px;
+.effect { 
+    padding-top: 0px;
     align-items: center;
     display: flex;
     flex-wrap: nowrap;
-    border: 2px solid white;
-    width: 100%;
-    
+    border: none; 
 }
 
 span {
@@ -61,7 +82,6 @@ span:first-child {
     animation: scaleUpBorder 1s forwards cubic-bezier(0.85, 0, 0.15, 1);
     overflow: hidden;
     display: flex;
-      
 }
 
 .text-effect1::before {
@@ -70,22 +90,16 @@ span:first-child {
     width: 12px;
     height: 122px;
     background: linear-gradient(180deg, rgba(167,16,212,1) 27%, rgba(219,13,148,1) 54%, rgba(255,0,0,1) 100%);
-    animation: scaleUpLine 1s forwards cubic-bezier(0.85, 0, 0.15, 1);
+    animation: scaleUpLine 2s forwards cubic-bezier(0.85, 0, 0.15, 1);
+    animation-delay: 1s;
     transform: skew(0deg);
     margin-right: 20px;
 }
 
 @keyframes scaleUpLine {
     to {
-        transform: skew(-15deg);
+        transform: skew(-12deg)
     }
-}
-
-.sub-header {
-    font-size: 1.2rem;
-    color: #c3e88d;
-    font-weight: 100;
-    margin-top: 30px;
 }
 
 @keyframes scaleUpBorder {
@@ -94,15 +108,25 @@ span:first-child {
     }
 }
 
+.sub-header {
+    font-size: 1.6rem;
+    color: #c3e88d;
+    font-weight: 100;
+    margin-top: 30px;
+}
+
 .text-effect1 .text-wrapper {
-    transform: translateX(calc(-100% - 30px));
-    animation: slideTextRight 1s 0.6s forwards cubic-bezier(0.85, 0, 0.15, 1);
-    
-    
+    transform: translateX(-92%);
+    animation: slideTextRight 0.7s 2.5s forwards cubic-bezier(0.85, 0, 0.15, 1);
 }
 
 @keyframes slideTextRight {
     to {
         transform: translateX(0%);
     }
+}
+
+.text-wrapper {
+    display: flex;
+    align-items: center;
 }
