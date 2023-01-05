@@ -45,7 +45,6 @@ to{opacity:1}
     align-items: center;
     justify-content:center;
     flex-wrap: nowrap;
-    border: 1px solid red;
 }
 
 section {
@@ -68,7 +67,7 @@ section {
 
 span {
     display: inline-block;
-    font-size: calc(7rem + 0.9vw)
+    font-size: calc(5rem + 0.9vw)
 }
 
 span:first-child {
@@ -129,7 +128,6 @@ span:first-child {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border: 1px solid red;
     max-width: fit-content;
     padding: 30px;
     text-align: center;
@@ -198,7 +196,6 @@ span:first-child {
         align-items: center;
         justify-content:center;
         flex-wrap: nowrap;
-        border: 1px solid red;
     }
     
     section {
@@ -280,7 +277,6 @@ span:first-child {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        border: 1px solid red;
         max-width: fit-content;
         padding: 30px;
         text-align: center;
