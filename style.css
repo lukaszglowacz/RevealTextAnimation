@@ -67,7 +67,7 @@ section {
 
 span {
     display: inline-block;
-    font-size: calc(5rem + 0.9vw)
+    font-size: calc(5.5rem + 0.9vw)
 }
 
 span:first-child {
@@ -121,7 +121,7 @@ span:first-child {
 }
 
 .sub-header {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: #c3e88d;
     font-weight: 100;
     display: flex;
@@ -218,7 +218,7 @@ span:first-child {
     
     span {
         display: inline-block;
-        font-size: calc(3rem + 0.9vw)
+        font-size: calc(3.5rem + 0.9vw)
     }
     
     span:first-child {
@@ -270,7 +270,7 @@ span:first-child {
     }
     
     .sub-header {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         color: #c3e88d;
         font-weight: 100;
         display: flex;
